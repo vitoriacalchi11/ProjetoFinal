@@ -1,0 +1,192 @@
+﻿#container-sobre {
+    font-family: 'conteudo';
+    display: flex;
+    flex-direction: column;
+}
+
+#container-sobre .sobre-h1 {
+    font-family: 'extra-bold';
+    font-size: 40px;
+}
+
+#topo {
+    flex-direction: column;
+}
+
+#sobre-nos {
+    margin: 145px 200px;
+}
+
+#historia {
+    display: flex;
+    justify-content: space-between;
+}
+
+#historia p {
+    padding: 20px 200px 0px 0px;
+    font-size: 20px;
+}
+
+#fotoveteninario {
+    border-radius: 10px;
+    height: 260px;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.hr-historia {
+    border: solid 3px #094408;
+}
+
+p,
+.sobre-h1 {
+    margin: 0px;
+}
+
+
+
+
+
+#PTotal {
+    font-family: Arial, sans-serif;
+    background-color: #88CBA5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerC {
+    text-align: center;
+    width: 80%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 140px;
+}
+
+.card {
+    background-color: #58BC56;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px;
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+}
+
+    .card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 1.5em;
+        color: #000;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .card p {
+        font-size: 1em;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#faixa {
+    padding: 20px;
+    background-color: #1EC55B;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 160px 0;
+}
+
+#btnd {
+    justify-content: end;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pText {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+    .pText p {
+        margin: 0;
+        font-size: 24px;
+    }
+
+
+
+
+
+#container {
+    background-color: #83DFAB;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 1080px;
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+
+.total {
+    background-color: #83DFAB;
+    border: 1px solid white;
+    padding: 20px;
+    width: 90%;
+    max-height: 280px;
+    text-align: center;
+}
+
+    .total h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+    .info span {
+        font-size: 16px;
+    }
+
+    .info .label {
+        font-weight: bold;
+    }
+
+    .info .value {
+        text-align: left;
+        flex-grow: 1;
+        margin-left: 10px;
+    }

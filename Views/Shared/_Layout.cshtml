@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetoFloresta</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProjetoFloresta.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header id="bg-header">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom box-shadow mb-3 p-1">
+            <div class="container d-flex justify-content-between align-items-center">
+              
+                <a href="~/../../Home/Index" class="navbar-brand">
+                    <img src="~/img/logoc.png" id="logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-row flex-lg-row flex-md-row flex-sm-column text-center" id="nav">
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                                <svg bootstrap-icon="HouseFill" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Sobre" asp-action="Index">
+                                <svg bootstrap-icon="InfoCircle" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Campanha" asp-action="Index">
+                                <svg bootstrap-icon="StickiesFill" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">
+                                <svg bootstrap-icon="TelephoneFill" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Denuncia" asp-action="Index">
+                                <svg bootstrap-icon="Headset" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item icons" id="icons">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Perfil" asp-action="Index">
+                                <svg bootstrap-icon="PersonFill" width="30" height="30" color="#6EB206"></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        
+
+        <!--
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 p-4">
+            <div class="container-fluid "  >
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img=""</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id ="logo">
+                   <img src="~/img/logoc.png"  />
+
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-end space-x-4">
+                    <ul class="navbar-nav flex-grow-1 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><svg bootstrap-icon="HouseFill" width="30" height="30" color="#6EB206"></svg></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Controle" asp-action="Index">Controle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
+    </header>
+
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+
+    <footer class="border-top footer text-muted fot">
+        <div class=" fot">
+            Copyright© 2024  Floresta Viva - Todos os direitos reservados
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿#carouselExampleControls {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.btn-css {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top:-5px;
+    margin-bottom:-5px;
+    background-color: #A6F3CF;
+    color: #094408;
+    border: 2px solid #094408;
+}
+
+    .btn-css:hover {
+        background-color: #094408;
+        color: #A6F3CF;
+        border: 2px solid #A6F3CF;
+    }
+
+#faixa {
+    padding: 20px;
+    background-color: #1EC55B;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+#btnd {
+    justify-content: end;
+    align-items: center;
+
+    margin-right:auto;
+    margin-left: auto;
+ 
+}
+
+.pText {
+    text-align: center;
+    padding: 10px ;
+    position: relative;
+    padding-left:190px;
+}
+
+    .pText p {
+        margin: 0;
+        font-size: 24px;
+    }
+
+
+
+.mgt{
+    margin-top: auto;
+    margin-bottom: auto;
+margin-left: auto;
+margin-right:auto;
+    
+}
+
+#coluna1 {
+    width: 50%;
+}
+#coluna2 {
+    width: 30%;
+
+}
+
+#coluna2 p{
+    font-size:20px;
+}
+
+#backB{
+    background-image:src(~/img/Fundo.png);
+}
+
+
+
+
+#denuncias {
+    background-color: #88CBA5;
+    height: 680px;
+    margin-bottom: 60px;
+    padding-top: 1px;
+}
+
+    #denuncias h2 {
+        font-family: 'extra-bold';
+        font-size: 36px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+#denuncias-p {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-denuncias {
+    width: 132px;
+    height: 132px;
+    border-radius:90px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.caixa {
+    background-color: white;
+    border: 20px solid #094408;
+    border-radius: 20px;
+    width: 266px;
+    height: 455px;
+    margin-top: 40px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding-top: 15px;
+    flex-direction: row;
+}
+
+.conteudo {
+    text-align: center;
+    font-size: 15px;
+}
+
+.nome {
+    font-size: 30px;
+    font-family: 'semi-bold';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.alinhamento {
+    margin: 30px 15px 0px 15px;
+}
+
+
+

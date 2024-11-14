@@ -1,0 +1,49 @@
+﻿<body>
+    <div class="container">
+        <form id="denuncia-form">
+            <h1>Formulário De Denúncia</h1>
+
+            <label for="cidade">Digite sua cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade...">
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+                <option value="" disabled selected>Escolha uma categoria...</option>
+                <option value="Queimada vegetação como método agrícola.">Queimada vegetação como método agrícola.</option>
+                <option value="Garimpos de pedras e metais preciosos">Garimpos de pedras e metais preciosos</option>
+                <option value="Extração ilegal de madeira">Extração ilegal de madeira</option>
+                <option value="Expansão da fronteira agrícola">Expansão da fronteira agrícola</option>
+                <option value="Exploração de minérios">Exploração de minérios</option>
+                <option value="Queimas">Queimas</option>
+            </select>
+            <div class="d-flex ">
+                <div class="col-7 ">
+                    <label for="titulo">Digite o Título da denúncia</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Digite o Título da denúncia...">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+            </div>
+
+
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva sua denúncia..."></textarea>
+
+            <label for="imagem">Adicione uma imagem</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*">
+
+            <label for="mapa">Localização</label>
+            <div id="mapa">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Vitoria,ES&zoom=12&size=400x200&key=AIzaSyCXP6KgjSD6Zh1HcAE-q6dh0634rjHftDE" alt="Mapa da Localização">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    @section Scripts {
+        <partial name="_ScriptsParcial" />
+    }
+</body>

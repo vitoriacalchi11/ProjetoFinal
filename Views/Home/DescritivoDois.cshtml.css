@@ -1,0 +1,92 @@
+﻿.img-denuncias {
+    width: 132px;
+    height: 132px;
+    border-radius: 90px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.caixa {
+    background-color: white;
+    border: 25px solid #094408;
+    border-radius: 20px;
+    width: 400px;
+    height: 650px;
+    margin-top: 60px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding-top: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.margem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    text-align: center;
+    font-size: 15px;
+}
+
+.nome {
+    font-size: 30px;
+    font-family: 'semi-bold';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.alinhamento {
+    margin-top: 80px;
+}
+
+
+
+#container {
+    background-color: #83DFAB;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 1080px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.total {
+    background-color: #83DFAB;
+    border: 1px solid white;
+    padding: 20px;
+    width: 90%;
+    max-height: 280px;
+    text-align: center;
+}
+
+    .total h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+    .info span {
+        font-size: 16px;
+    }
+
+    .info .label {
+        font-weight: bold;
+    }
+
+    .info .value {
+        text-align: left;
+        flex-grow: 1;
+        margin-left: 10px;
+    }

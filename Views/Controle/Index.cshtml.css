@@ -1,0 +1,99 @@
+﻿
+
+
+
+
+.boards {
+    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;/*
+    margin-right:30px;*/
+}
+
+.board {
+    border: 3px solid #094408;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+    .board h4 {
+        padding: 16px;
+        margin: 0;
+        color: #094408;
+    }
+
+.dropzone {
+    padding: 16px;
+    min-height: 400px;
+    min-width: 332px;
+}
+
+.cards {
+    width:82%;
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #83DFAB;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #1E531C;
+    margin-bottom: 16px;
+}
+
+.category {
+    padding: 4px;
+    height: 8px;
+    width: 32px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: gray;
+}
+
+    .category.green {
+        background-color: lawngreen;
+    }
+
+    .category.blue {
+        background-color: dodgerblue
+    }
+
+    .category.red {
+        background-color: hotpink;
+    }
+
+
+/** Classes de estilização para o JavaScript **/
+
+.highlight {
+    cursor: move;
+    background-color: #fd951f19;
+}
+
+.selectedCard {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.overZone {
+    cursor: move;
+    background-color: #4cd13755;
+}
+
+.cards, .dropzone {
+    transition: .5s;
+}
+
+h2{
+    text-align:center;
+    margin-top:55px;
+}
+
+.container {
+    background-image: src('../../img/Fundo.png')
+}
+
+body {
+    background-image:src('../../img/Fundo.png')
+}

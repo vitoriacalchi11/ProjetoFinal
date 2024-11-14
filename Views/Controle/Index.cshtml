@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "_LayoutControle";
+}
+
+<div class="container">
+    <h2>Com o que contamos?</h2>
+    <div class="row boards">
+        <!-- Divs com configuração em linha para md e lg, em coluna para sm -->
+        <div class="col-12 col-md-3 board">
+            <h4>Resolver</h4>
+            <div class="dropzone">
+                <div class="cards" draggable="true">
+                    <div class="category blue"></div>
+                    <div class="content">Queimas em Dourado</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 board">
+            <h4>Resolvendo</h4>
+            <div class="dropzone">
+                <div class="cards" draggable="true">
+                    <div class="category green"></div>
+                    <div class="content">Expansão da fronteira agrícola</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 board">
+            <h4>Resolvido</h4>
+            <div class="dropzone">
+                <div class="cards" draggable="true">
+                    <div class="category blue"></div>
+                    <div class="content">Queimas em Dourado</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ScriptsParcial" />
+}

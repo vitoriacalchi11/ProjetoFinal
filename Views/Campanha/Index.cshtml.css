@@ -1,0 +1,66 @@
+﻿
+/* Banner */
+.banner {
+margin:auto;
+}
+
+h2 {
+    font-size: 28px;
+    color: #004d00;
+    margin-bottom: 20px;
+}
+
+/* Botão Denuncie */
+.denuncie-btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    background-color: #09A241;
+    color: #094408;
+    border: 2px solid #094408;
+}
+
+    .denuncie-btn:hover {
+        background-color: #A6F3CF;
+        color: #09A241;
+        border: 2px solid #09A241;
+    }
+
+.acao{
+    margin-top: 60px;
+    margin-left:80px;
+    margin-bottom:80px;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+#containner {
+    justify-content: center;
+    display: flex;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor do elemento pai */
+}

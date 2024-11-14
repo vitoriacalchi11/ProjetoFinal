@@ -1,0 +1,52 @@
+﻿@page
+@model LoginModel
+
+
+<div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-image: src(/wwwroot/img/FundoLogin.jpg); background-size: cover; background-position: center; z-index: -1;">
+    <div id="foi">
+        <div class="container">
+            <div class="login-box">
+                <h1>Entrar</h1>
+                <section>
+                    <form id="account" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                        <div class="form-floating input-container">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email" class="form-label">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating input-container">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Senha" style="width:260px; margin-top:20px;background-color:white" />
+                            <label asp-for="Input.Password" class="form-label">Senha</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="checkbox ">
+                            <label asp-for="Input.RememberMe" class="form-label">
+                                <input class="form-check-input" asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                        <div>
+                            <button type="submit">Entrar</button>
+                        </div>
+                        <div style="margin-top:10px;">
+                            <p>
+                                <a id="forgot-password" asp-page="./ForgotPassword" style="text-decoration: none;  " class="text-success">Esqueceu a senha?</a>
+                            </p>
+                            <p>
+                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" style="text-decoration: none;" class="text-success">Cadastre-se!</a>
+                            </p>
+                            <p>
+                            </p>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
